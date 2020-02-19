@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/africa"
+        android:icon="@drawable/ic_earth"
+        android:title="Africa"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/europe"
+        android:icon="@drawable/ic_earth"
+        android:title="Europe"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/asia"
+        android:icon="@drawable/ic_earth"
+        android:title="Asia"
+        app:showAsAction="never">
+        <menu>
+
+            <item android:id="@+id/china"
+                android:title="China" />
+
+            <item android:id="@+id/india"
+            android:title="India" />
+
+        </menu>
+
+    </item>
+
+
+</menu>
