@@ -12,17 +12,32 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+ private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListView();
+            }
+        });
+        }
+        public void openListView(){
+        Intent intent = new Intent(this, ListViewActivity.class);
+        startActivity(intent);
 
-    }
+        }
+
+
+
 
     public void sendMsg (View view){
 
@@ -50,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.asia:
                 Toast.makeText(this,"Asia selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.africa:
-                Toast.makeText(this,"Africa selected", Toast.LENGTH_SHORT).show();
-                return true;
+
             case R.id.china:
                 Toast.makeText(this,"China selected", Toast.LENGTH_SHORT).show();
                 return true;

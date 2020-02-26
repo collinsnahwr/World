@@ -2,14 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/africa"
-        android:icon="@drawable/ic_earth"
-        android:title="Africa"
-        app:showAsAction="ifRoom" />
+
 
     <item android:id="@+id/europe"
         android:icon="@drawable/ic_earth"
-        android:title="Europe"
+        android:title="SONG"
         app:showAsAction="never" />
 
     <item android:id="@+id/asia"
