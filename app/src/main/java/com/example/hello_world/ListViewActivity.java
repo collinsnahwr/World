@@ -26,10 +26,10 @@ public class ListViewActivity extends AppCompatActivity {
 
        final ArrayList<String> arrayList = new ArrayList<>();
 
-        arrayList.add("MUSIC");
-        arrayList.add("SPORTS");
-        arrayList.add("DRAMA");
-        arrayList.add("ENTERTAINMENT");
+        arrayList.add("Piggery");
+        arrayList.add("Poultry");
+        arrayList.add("Construction");
+        arrayList.add("Lumbering");
 
         ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
         listview.setAdapter(arrayAdapter);
